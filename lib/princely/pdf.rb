@@ -47,6 +47,7 @@ module Princely
 
     def executable_options
       options = []
+      options << "--http-timeout=15"
       options << "--input=html"
       options << "--server" if @server_flag
       options << "--log=#{log_file}"
